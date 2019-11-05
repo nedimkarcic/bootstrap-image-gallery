@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Image gallery</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+	<style type="text/css">
+		body { padding-top: 70px; }
+		.jumbotron { color:#2c3e50;
+					background: #ecf0f1	 }
+		.navbar-inverse { background: #2c3e50; }
+		.navbar-inverse .navbar-nav > li > a {
+    color: white; }
+    .navbar-inverse .navbar-brand {
+    color: white;}
+
+    /* FINTA DA budu u redu svi, bez bijelih rupa
+
+    >za potpuno iste velicine slika, provjeriti google
+      */
+    .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+	</style>
+</head>
+<body>
+<!-- navbar-inverse - potamni navbar,
+		a navbar-default - obicni
+
+		takodjer extra finta sa navbarom da ostane FIXIRAN - navbar-fixed-top -->
+
+		<!-- dodavanje ikonica pomocu span-a, provjeriti u verziji 4.0 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> PICS</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<div class="container">
+	<div class="jumbotron">
+		<h1> <i class="fas fa-camera-retro"></i>  The Image Gallery</h1>
+		<p> Some beautiful photos from Internet!</p>
+
+		<!-- vrteca :D - sa Font awesome -->
+		<div class="fa-3x">
+  		<i class="fas fa-spinner fa-spin"></i> </div>
+	</div>
+
+<!-- class="col-lg-4 thumbnail"
+		thumbnail sluzi za normalan raspored slika   -->
+	<div class="row flex ">
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1515378040420-7d3f50e186e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b406aa520de6c2ebb6d52e896a66e53&auto=format&fit=crop&w=500&q=60"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1520992048127-03c7e5176a4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0448927799c929e8f4f25f1b2be1c76c&auto=format&fit=crop&w=500&q=60"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1504877497169-fe91a0b062dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=397193262fbd9afdd5fc5e3793809d9a&auto=format&fit=crop&w=750&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1508426494465-6ff39a96b4c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e594cc97fb51349df29bc45f0c53b40&auto=format&fit=crop&w=751&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1494005612480-90f50fd9376f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36d7fc577cf6a4527cbee851db481b8c&auto=format&fit=crop&w=753&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1506241537529-eefea1fbe44d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c743141b38a2afe4a8ec4d77c889ef3&auto=format&fit=crop&w=750&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1509565840034-3c385bbe6451?ixlib=rb-0.3.5&s=c3e6530380365e0ed5a54a6b8b63413c&auto=format&fit=crop&w=889&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1508616987956-0cdacd91ac2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=401e531bcb93d5f6712d91e77cfd4997&auto=format&fit=crop&w=400&q=80"> </div>
+		<div class="col-lg-4 col-sm-6 thumbnail"> <img src="https://images.unsplash.com/photo-1515378040420-7d3f50e186e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b406aa520de6c2ebb6d52e896a66e53&auto=format&fit=crop&w=500&q=60"> </div>	
+	</div>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+</body>
+</html>
